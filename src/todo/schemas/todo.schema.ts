@@ -9,7 +9,7 @@ export class Todo {
   title: string;
 
   @Prop()
-  description: number;
+  description: string;
 
   @Prop()
   duedate: string;
