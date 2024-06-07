@@ -19,7 +19,7 @@ export class CreateTodoDto {
   @IsNotEmpty()
   dueDate: string;
 
-  @IsEnum(['Hign', 'Medium', 'low'], {
+  @IsEnum(['High', 'Medium', 'low'], {
     message: 'Priority should be either High, Medium or Low',
   })
   priority: 'Hign' | 'Medium' | 'low';
@@ -28,5 +28,5 @@ export class CreateTodoDto {
   tags: string[];
 
   @IsBoolean()
-  completed: boolean;
+  completed?: boolean;
 }
